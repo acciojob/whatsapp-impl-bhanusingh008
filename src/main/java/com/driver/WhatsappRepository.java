@@ -80,7 +80,7 @@ public class WhatsappRepository {
 
     public int sendMessage(Message message, User sender, Group group) {
         boolean group_exist = false;
-       for(String group1 : groupMessageMap.keySet()){
+       for(String group1 : groupUserMap.keySet()){
            if (group1.equals(group.getName())){
                group_exist=true;
            }
